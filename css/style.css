@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+body{
+    color: #494E61;
+}
+
 nav{
     background: #494E61;
     padding: 1em;
@@ -66,7 +70,6 @@ form input{
     padding: 1.5em 1em;
     border: 4px solid #EFADB4;
     font-size: 1em;
-    width: 100%;
     background-color: #F5F1F1;
 }
 
@@ -81,6 +84,56 @@ button{
     padding: 1em;
 }
 
-.main{
+main h2{
     text-align: center;
+    font-family: 'Ultra', serif;
+    font-size: 1.5em;
+    margin: 1.5em 0;
+}
+
+main{
+    text-align: center;
+}
+
+main article{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-gap: 1em;
+    margin: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+article .likes{
+    background-color: #EEEEEE;
+    display: inline-block;
+    padding: 1em;
+    width: 60px;
+}
+
+article .likes img{
+    width: 25px;
+}
+
+article .likes p{
+    color: #A7AEC5;
+    margin-top: .5em;
+    font-size: .9em;
+}
+
+article > p{
+    align-self: center;
+    justify-self: center;
+}
+
+article > img {
+    align-self: center;
+    justify-self: end;
+}
+
+main .more {
+    font-weight: bold;
+    color: #3B1CFF;
+    padding: 5em;
+    display: inline-block;
 }
