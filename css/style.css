@@ -4,6 +4,7 @@
 
 body{
     color: #494E61;
+    font-family: sans-serif;
 }
 
 nav{
@@ -18,7 +19,6 @@ nav{
     grid-column-gap: 10px;
     grid-template-columns: 1fr 50px;
     grid-template-rows: 1fr 1fr;
-    font-family: sans-serif;
     font-size: .8em;
     font-weight: bold;
 }
@@ -63,6 +63,8 @@ header h1{
 header form{
     display: flex;
     flex-direction: column;
+    
+    align-items: center;
 }
 
 form input{
@@ -81,7 +83,7 @@ button{
     text-transform: uppercase;
     border-radius: 5px;
     border: none;
-    padding: 1em;
+    padding: 1em 3em;
 }
 
 main h2{
@@ -131,9 +133,43 @@ article > img {
     justify-self: end;
 }
 
+article strong {
+    display: none;
+}
+
 main .more {
     font-weight: bold;
     color: #3B1CFF;
     padding: 5em;
     display: inline-block;
+}
+
+@media (min-width: 60em) {
+    form input {
+        width: 50%;
+    }
+    
+    main article{
+        grid-template-columns: 1.5fr 8fr 8fr 1fr;
+        margin: 3em;
+    }
+    
+    article .likes{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        width: 90px;
+    }
+    
+    article > p{
+        justify-self: start;
+    }
+    
+    article strong{
+        display: block;
+        color: #DD8C79;
+        font-weight: bold;
+        justify-self: end;
+        align-self: center;
+    }
 }
