@@ -1,18 +1,12 @@
-<<<<<<< HEAD
 *{
   box-sizing: border-box;
 }
 
-
-
 body {
->>>>>>> pagina1
     color: #494E61;
     font-family: sans-serif;
 }
 
-
-<<<<<<< HEAD
 nav{
     background: #494E61;
     padding: 1em;
@@ -179,7 +173,6 @@ main .more {
         align-self: center;
     }
 }
-=======
 
 .top {
     display: grid;
@@ -200,8 +193,6 @@ main .more {
     align-self: center;
 }
 
-
-
 .bottom {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
@@ -219,11 +210,6 @@ main .more {
     grid-column: 1 / -1;
 }
 
-h2 {
-    font-size: 25px;
-    font-weight: 700;
-}
-
 .section {
     margin-top: 35px;
     display: grid;
@@ -239,6 +225,8 @@ h2 {
 .section h2 {
     align-self: center;
     justify-content: start;
+    font-size: 25px;
+    font-weight: 700;
 }
 
 @media (min-width: 800px) {
@@ -316,4 +304,3 @@ h2 {
         grid-column: 2 / 3;
     }
 }
->>>>>>> pagina1
